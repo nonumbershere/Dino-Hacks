@@ -1,0 +1,391 @@
+console.log('%c👉Made by👈              👉nonumbershere!👈', 'color:#3ec994;background:#32bbbf;font-family:system-ui;font-size:3rem;-webkit-text-stroke: #325e19 2px;font-weight:bold;');  
+var button = document.createElement("button");
+button.innerHTML = "OpenMenu";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ var button = document.createElement("button");
+button.innerHTML = "SetSpeed";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.currentSpeed=(90);
+});
+var button = document.createElement("button");
+button.innerHTML = "GodMode";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.gameOver = function(){}
+});
+ var button = document.createElement("button");
+button.innerHTML = "-Speed";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.currentSpeed=(-1);
+});
+var button = document.createElement("button");
+button.innerHTML = "Pause";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ Runner.instance_.paused=(true);
+});
+var button = document.createElement("button");
+button.innerHTML = "unPause";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ Runner.instance_.paused=(false);
+});
+var button = document.createElement("button");
+button.innerHTML = "DA FLASH";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.config.ACCELERATION = 10000
+});
+var button = document.createElement("button");
+button.innerHTML = "Fly";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.tRex.config.GRAVITY = (0.000001);
+});
+var button = document.createElement("button");
+button.innerHTML = "SuperJump";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.tRex.setJumpVelocity(50)
+});
+var button = document.createElement("button");
+button.innerHTML = "Points";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ Runner.instance_.distanceRan = 47896
+});
+var button = document.createElement("button");
+button.innerHTML = "Lazi";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ Runner.instance_.playingIntro = true;
+});
+var button = document.createElement("button");
+button.innerHTML = "BOUNCE!";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+Runner.isBumped=0;Runner.prototype.gameOver=function(){if(Runner.isBumped==0){Runner.isBumped=1;window.setTimeout(function(){this.setSpeed(-this.currentSpeed);Runner.isBumped=0;},250);this.setSpeed(-this.currentSpeed);}};
+});
+var button = document.createElement("button");
+button.innerHTML = "SPAM";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ Runner.instance_.updateConfigSetting('ACCELERATION','0');Runner.instance_.updateConfigSetting('BG_CLOUD_SPEED','1');Runner.instance_.updateConfigSetting('CLOUD_FREQUENCY','100');Runner.instance_.updateConfigSetting('GRAVITY','1000');Runner.instance_.updateConfigSetting('INITIAL_JUMP_VELOCITY','0.1');Runner.instance_.updateConfigSetting('INVERT_DISTANCE','-1');Runner.instance_.updateConfigSetting('INVERT_FADE_DURATION',window.Infinity);Runner.instance_.updateConfigSetting('MAX_BLINK_COUNT','0');Runner.instance_.updateConfigSetting('MAX_CLOUDS','0');Runner.instance_.updateConfigSetting('MAX_OBSTACLE_DUPLICATION','5');Runner.instance_.updateConfigSetting('MAX_OBSTACLE_LENGTH','5');Runner.instance_.updateConfigSetting('MAX_SPEED','500');Runner.instance_.updateConfigSetting('MIN_JUMP_HEIGHT','0');Runner.instance_.updateConfigSetting('SPEED','500');Runner.instance_.updateConfigSetting('SPEED_DROP_COEFFICIENT','0.3');Runner.prototype.gameOver=function(){this.playingIntro=Math.floor(Math.random());this.playSound(this.soundFx.BUTTON_PRESS);this.playSound(this.soundFx.HIT);this.playSound(this.soundFx.SCORE);};Runner.instance_.distanceMeter.config.FLASH_DURATION=1;Runner.instance_.distanceMeter.config.FLASH_ITERATIONS=50;Runner.instance_.distanceMeter.config.ACHIEVEMENT_DISTANCE=1;setInterval(function(){Runner.instance_.gameOver();Runner.instance_.onKeyDown({keyCode:32,which:32,charCode:32,preventDefault:function(){}});Runner.instance_.distanceMeter.digits=(Math.random()*999999).toString().split('');},50);
+   alert('Please be warned this is loud!');
+});
+var button = document.createElement("button");
+button.innerHTML = "Crash";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.gameOver=(true);
+});
+var button = document.createElement("button");
+button.innerHTML = "SandBox.mode";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+Runner.instance_.horizon.spritePos.CACTUS_LARGE=(0);
+Runner.instance_.horizon.spritePos.CACTUS_SMALL=(0);
+Runner.instance_.horizon.spritePos.PTERODACTYL=(0);
+Runner.instance_.horizon.spritePos.TEXT_SPRITE=(0);
+Runner.instance_.gameOver=function(){}
+});
+var button = document.createElement("button");
+button.innerHTML = "G̸̨̨̢̡̧̢̨̨̧̧̧̢̨̨̨̨̡̧̡̢̛̛̛̛̛̛̛̣̭̭̬̺̤̣̰̩̰̥̥̖͓̫͖̫̥͈̤̠͚̝̤͔̬̫̭̹̭̺̲̣͓͙̝̟̣̜͓͓̪̠̯̙̖̭͇͈̟̰̱̪̦̤͎̘̝̖̦͈͙̻͈̬̖͈̻̥̖̣̖̙̣̠̤͖͕̪͖̦͈̼̱̯̹͓̣̬̟͍̰͕̟͓̻̰͇͉͇̦̱̦̺̰͚͎̣̟̘̲̳̭̟͓̙͔̟̼͎̥̮͖̹͓͇̱̯̟̩̟̠̜͓̠͔̭͚̮̺̯̤̲͙̤̞̠̟̘̘̳̪͎̝͉͓̙͎͉͖͎̪̭̬̞̦̜̬̪̻̝͍̜̤̭̩̟̗͉̹̠͙̗̥̹͍̗̦̘̪̗̤̝͚̺͈̱̹̫͙̺͚͍̗̞͓̣̠̳͍͓̩̠̺̞͈̩͍̞͎̮̘̥̘͈̙͎͍͑̽͛̑̓̆̅͒̈͆̊̊͛̓̾͊͆͆͋̈́̇̽̓̐͊̇͂̾̽̀͐̅̿͐̓̐͒̏̂̋̽̿̋̓̇̓̊̾͆̃̄̍̓̆͐̈̍́̈̈͊̈̊̇̃͛̀̈́̀̈́͆͗̈̔͐͒̄̍̊̓́͂̓̏́̌̒̇͒̅̀͋̍̓̽̀̉͐͋͊̽̎̈͂̏̾́́̀̓̑̆͌͗̉͊̈́̐̍͆̆̓̀̌͑́̽̾̓͗͒͗͆̈̍̌͐͒̑͂̎́̐͑̀͐̏͌̌̔̆̆̋̅̅͆͗͊͂̐̇̓͌̀́͐̈́̍͆̎͐̍͂̿̂͗͒̉͗̉̊͐̑̊̌͗̄̏̏̃̾͛̄̿̒͌̏̈̍͊̍̈̾̾̇͆̈́̑̄͂̾̋̉̓̚̕̚̚̚̕͘͘̚̚̚͘̕̚̚̕̚̕͜͜͜͜͝͠͠͠͝͝͝͝͠͝͝͝͠͝͝͠͠ͅͅͅͅͅͅͅͅͅͅͅͅͅl̴̨̧̡̧̡̨̨̧̧̧̛̗͕̫̪͈̺͔͍̙͖͎͖͉͈̝̹̼̙̞̥͉̱̫͈͚͎̥̪̺͓̟̹̯̥̫̠̞̜̭̘͎̝̜̫̥̹͕̩̹͈͔̤̙̬͖̘̦̱̩͉̭̣̹̼͖͔̬̜̪̗̯̟̱̩̲̤̹̞̮̪̠̦͙̟̱̻̥͇͇̤͖͙̖̤̱̃̿̿͐̏̆̈̍̒͑͑͛̔̾̒͌̃̎̾̑̄̏͒̎͊͂͛͑̏̅̋̊͂͋͛́͌͗̽͌͊̄̽̂͋͐͋̽͒̏́̈́͗̒̀̎͋̈́́̄̕̚͜͜͜͝͠͝͝ͅͅͅI̴̢̢̡̢̢̡̢̡̡̨̧̢̧̢̢̧̨̡̨̡͙͔̯̗̬̯̣͖̙̣͙̦̝͈̫͓̳͉̦̤̣͕̮̳͇͙̬̟̯̻̞̞̻̼̰̥̳͓̣̺̥͍͉̗͖̥͎̗̗͙͚̻͕̞̞̭͙͎͈̦̘̬͕̱̻͕͎̙͕͍̰̮̭̞͖̠̙̳̘͓̻̻̮̩̱̮̟̻̟̭͓̪̹̲͓̞͉̯͍̠͎̬̻͓̮͙̱̝͎͎̺̲̲̪̮͇͖̲̳̼̩̖̱̠̫̝̬̘̪̠̳̳͉͕̳̳͚̜̰̮͓̳͖͓͙̜͖̠̹̜̟̲͙͙͔̩̼̫̤̝̻̦̺̯͇̪̤͔̤͕͎͍͈͕͓̬̝̻̦̣̍͛̊̋́̓̽̅̀͋̆̓̓̈͛̀́̈́͌̉̽̿͗̍̔̊̀̿̎͐́͆̆̈̓̓̽̐̽́͂̓̑̉̾͌̐̅̽̋͌́́̅̌̑̅͒̎̓͒̏̽̆̍̏̓͆͛̌̊͂̎͐̌̏̚̕͜͜͜͜͜͜͜͜͠͠͝͠͠͝ͅͅͅͅͅc̴̭͚͙̦͌̉͊̈́́̀̅̓̀͋̄̊͋̈́̑̓͋̂͂̔̂̿̑͆̆̽͌͂̄̄̃̈́͋̿̓̾̈́̐̿̓̀̈̽͊̐͂̄̈͗̎̅́̍̇͂̆̅͑͂̑̂̊͒͘̕̚̕̚͠T̸̨̨̡̨̨̛̛̛̝͓̟̼̪̜̩̺͇̳̰͙̭̤̲̙̦̳̈̉͂̏̈̄̆́̑̂͒́̈͂̋͋̐̆̍̓̈́̐̅̑̅̇̇͊͗͒̒̒̂̀̑͛̒̐͑̉̍̈̏̓̓͋͌͌̈́̆̍̇͌̏̓̄̌̅̿͂͊̾̐̍̄̓̀̈̀̅͑̒͐̏̌̀͑̆͂̇̈͊͋̐̈̑̃̅̆̀̂̌͌́̍̿̀́̃̋͌̆̎̊̐̆́̊͛̒͋̌͑̊́̔͆̉̀̂̆͆́̎̏͒̏̄͊̆̃͘̕͘͘̕̚̕͘̕͠͝͝͝͝͠͝͝͝ć̶̨̢̧̨̧̧̢̢̨̡̡̨̡̢̢̧̧̧̢̡̛̛̛̛̛̛̛̛̬̯͍̜͕̼̖̩͚̩͉̥͓̘̱͖͕̩̫̟̗͍͎̭̤̖̱̳̱͍̫̲͕̤͉͈͓̤̪͎͍̳͍͍͔̹̥̺̼̥̠͕̲͚̦̝̟̜̥̞̰̮̭̝͙̦̣͈̜̞̩͎̞̟̭̖̣̜̜͕͈̺̺͎̯̻̖̳͉͔̱̤̠̞̝̲̪̻͔̪̙͖̟̫̩͇͍̥̞̠̘̦͔̩͚̣͚̤͔͓̞̳̝̜̖̘̗͈͎̯̘̭̭͈̳̖̜̙̗̰̬̯̪͉̬̯͖̟̺̹̯̹̭̣̦̺̦̝͇̳͖̻̘̙̬͙̖̘͉͔̼̠͍̭̤̙͍̜̦̼͚͕̟͙̯̳̦͖̙̺̦̫̃̽̈́͑͗͗̋̈̋̈̔͑̽͊͊̈̇͋̈́̔̂͑̃̆̆̎̊̆̏̾͛̂̄͊͐̍̒͗́̽͆̈́́͒̎̌͑͐̒̏̍͆̓͐͆̊͛͑̈̆̆̿͑̂̋̃̈́̑̀̃̉̏͛̌̋̐̊̎̓̒̊̇͊̌̏̏̒́̀͌̍͂̽̏̋̇͗͒͐͑͌̈́̆̔̿͋̿̃̋̌̔́̉͗͋͗̀͛͊̿̓̇̈́͌̂̾̏̂̎̆̌́͐̅̄́̀̄͛́̋͊̐̉̉͂̓̀͛͂̃̑̓̅̏͊͗̉̅̓̃͋̃͆̃̈́̊̐̒͌̈́͑́̃̀͗̆̈́͆͌̃͛̓̍̄̆͂̎̅͆̌̀̃̋͐͗̇̓̍̄͊̔̀̽̊̅̿̑̇́̿̏̀̏͐͛̃́̐͋̌͑̓̿̈́͒̽̅̿̎̈̍̃̑̄͆̆̇̃͗̑̉̀̕̚̕͘̕̕͘̚̚̕͘̕͜͜͜͜͜͝͠͠͠͝͝͝͝͝͝͠͠͝͝͝͠͠͠͝͝ͅͅͅͅͅͅͅh̶̡̧̧̡̨̧̢̧̢̡̨̨̡̧̢̨̡̢̛̛̛̛̰̠̼̞̫͚̺̖͎̥̞̯͈̼̬͖͖̣̩͔̭͉͇̥̯͙̞͎̪̠͔͚̘͖̮͎͙̥͓̬̻͓͔̗̲̪̜̬̖̼̦̲͈̝̘̭̯̠͖̮̬̤͚͉͍͙͉͕̙̜̟̼̦̺̙͓̞̦̪͎̮̙̫͚̟̖̤̬̟̲̟̦̹̻̤̺̖͓̼̙͍̘̠̭̗̫̙̣̩̖̼̥͎̱̗̘͉̰͈̪̝͎͖̟̺̺͉͇͎͇̫̫̹͕̘̤͕͔̞͈̺͒̈́̓̋̀͛̒͑̆̃̃͌̑̃̓̈͒̒̎̂̑̋̽̀̔̉͋̾̀̈́̑̆̔̂̌͆̓̊̄͛̂̉͋̂́̏̄̀̑͋̍̄̀̔̈́̈͌͒͐̋̿̿͂̒͛̊̏̾̏̀͒͗́̎̈́̓̅̓̈̓̔͌͌͒̿͂͊̀͐̀͐̄͌̓͋̎͋̒̉̎̽̂̎͐͌͊̿̾̒̂̾̏͐͋͊̔̅͐͊̆̏̀̽͂̂̔̉͊̈́́͑̅̔́̍̈́̽̑̅̃̆͐͂̒̂́̿̿̈́̑̋͗́̀̔͆͋̊̅̓̃͆́̉̌͐̒̓͐̑̍̒̈́̎̿̓̓͘͘̕͘̚̕͘̕̕̚̕͜͜͜͜͝͝͝͠͝͝͠͝͝͝͠͝͝͝͝͠͠ͅͅͅͅ";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ Runner.instance_.horizon.spritePos.CACTUS_SMALL=(0);
+Runner.instance_.horizon.spritePos.CACTUS_LARGE=(0);
+Runner.instance_.gameOver=function(){}
+Runner.instance_.tRex.speedDrop=(1000000);
+});
+var button = document.createElement("button");
+button.innerHTML = "Reload";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  reloadButtonClick();
+});
+var button = document.createElement("button");
+button.innerHTML = "Restart in mid game";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+ Runner.instance_.restart();
+});
+});
+var button12 = document.createElement("button");
+button12.innerHTML = "ModMenu2";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button12);
+
+// 3. Add event handler
+button12.addEventListener ("click", function() {
+var button = document.createElement("button");
+button.innerHTML = "Crash2";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.defaultDimensions.HEIGHT=(0);
+Runner.defaultDimensions.WIDTH=(0);
+});
+var button = document.createElement("button");
+button.innerHTML = "WS keys";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+Runner.keycodes.JUMP={87: 1};
+Runner.keycodes.DUCK={83: 1};
+});
+var button = document.createElement("button");
+button.innerHTML = "FlatScreenTV";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.loadImages();
+});
+var button = document.createElement("button");
+button.innerHTML = "UnHidden";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.containerEl.hidden=(false);
+});
+var button = document.createElement("button");
+button.innerHTML = "UnHidden";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.containerEl.hidden=(false);
+});
+var button = document.createElement("button");
+button.innerHTML = "Hidden";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.containerEl.hidden=(true);
+});
+var button = document.createElement("button");
+button.innerHTML = "Achievement";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+   Runner.instance_.distanceMeter.achievement=(true);
+});
+var button = document.createElement("button");
+button.innerHTML = "HideHightScore";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.instance_.distanceMeter.flashTimer=(1);
+});
+var button = document.createElement("button");
+button.innerHTML = "SandBox.mode2";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  Runner.spriteDefinition.LDPI.CACTUS_LARGE=(0);
+Runner.spriteDefinition.LDPI.CACTUS_SMALL=(0);
+Runner.spriteDefinition.LDPI.CLOUD=(0);
+Runner.spriteDefinition.LDPI.PTERODACTYL=(0);
+Runner.spriteDefinition.LDPI.TEXT_SPRITE=(0);
+Runner.instance_.gameOver=function(){}
+});
+});
+var x = document.createElement("ARTICLE");
+  x.setAttribute("id", "myArticle");
+  document.body.appendChild(x);
+
+  var heading = document.createElement("H1");
+  var txt1 = document.createTextNode("Hacks");
+  heading.appendChild(txt1);
+  document.getElementById("myArticle").appendChild(heading);
+
+  var para = document.createElement("P");  var txt2 = document.createTextNode("-Lazi-point-superjump-fly-daflash-unpaus-pause --speed-godmode-setspeed-restartinmidgame-Glitch-sandbox.mode-crash(currently in devolepment.)spam-b");
+  para.appendChild(txt2);
+  document.getElementById("myArticle").appendChild(para); 
+  document.body.insertBefore(button, document.body.firstChild);
+  document.body.insertBefore(button, document.body.firstChild);
+  const MENU = document.createElement('div');
+  MENU.style.color=('blue');
+  MENU.style.background=('black');
+  MENU.style.width=('500px');
+  MENU.style.height=('90px');
+  MENU.innerHTML=('Made by nonumbershere! no else!');
+  document.body.append(MENU);
+  document.body.insertBefore(button, document.body.firstChild);
+  document.body.insertBefore(button, document.body.firstChild);
+   var x = document.createElement("FIGURE");
+  x.setAttribute("id", "myFigure");
+  document.body.appendChild(x);
+
+  var y = document.createElement("IMG");
+  y.setAttribute("src", "data:image/png;base64,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");
+  y.setAttribute("width", "304");
+  y.setAttribute("width", "228");
+  y.setAttribute("alt", "DinoGame");
+
+  x.appendChild(y);
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "color");
+  document.body.appendChild(x);
+  button12.style.color=('white');
+button12.style.background=('red');
+button.style.color=('green');
+button.style.background=('white');
+document.body.style.background=('blue');
+document.body.style.color=('white');
+var x = document.createElement("DETAILS");
+  document.body.appendChild(x);
+
+  var summaryElmnt = document.createElement("SUMMARY");
+  var txt1 = document.createTextNode("CopyRight.");
+  summaryElmnt.appendChild(txt1);
+
+  var pElmnt = document.createElement("P");
+  var txt2 = document.createTextNode("- Made by nonumbershere aka jonathan. if you take them I will call you out(=");
+  pElmnt.appendChild(txt2);
+  x.appendChild(summaryElmnt);
+  x.appendChild(pElmnt);
+   var github12 = document.createElement("button");
+github12.innerHTML = "Github";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(github12);
+
+// 3. Add event handler
+github12.addEventListener ("click", function() {
+location.replace('https://github.com/nonumbershere/Hacks-and-mods');
+});
+const EASTAEGGS = document.createTextNode('EasterEggsComingSoon!');
+document.body.insertBefore(button12, document.body.firstChild);
+Runner.classes.ARCADE_MODE=(false);
