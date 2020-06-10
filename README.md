@@ -1,2 +1,2 @@
 # Dino-Hacks
-DINO hacks hacking and DINO MOD MENUS!!!! inspect element only or anything else that's like it!
+if you want other hacks go to **[my second github!](https://github.com/nonumbershere/Hacks-and-mods/)**
