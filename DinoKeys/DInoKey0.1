@@ -1,0 +1,19 @@
+	console.log('%cNoNumbersHereKEYS %c+L = setspeed',  'color: red; background: green; font-size: 100px; font-family: system-ui;', 'font-size: 20px; color:black; background: white;');
+document.addEventListener('keydown', function(e) {
+	switch(e.keyCode) {
+				case 76:
+  console.log('Currently The Only Key.');
+     Runner.instance_.setSpeed(+22);
+break;
+    }
+        
+    });
+const Welcomer = document.createTextNode('Welcome To My Hacks! KEYS: L = setspeed(20)');
+   document.body.insertBefore(Welcomer, document.body.firstChild);
+  var Remover = document.createElement('button');
+Remover.innerText=('remove text');
+document.body.insertBefore(Remover, document.body.firstChild);
+Remover.addEventListener ('click', function() {
+   Welcomer.replaceWith('');
+ Remover.replaceWith('');
+});
