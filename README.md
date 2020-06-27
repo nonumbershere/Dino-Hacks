@@ -5,4 +5,4 @@ This place we show you daily hacks!
 Runner.instance_.setSpeed(100000000000); //LOLOLOLOLOLOLOLOLOLOL this is simple lol
 # Images!
 
-![](DinoGameHACKED-PixTeller (1).png)
+![](DInoGameHACKED-PixTeller (1).png)
