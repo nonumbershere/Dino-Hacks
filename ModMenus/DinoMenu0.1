@@ -1,0 +1,33 @@
+const hackMenu = document.createElement('div');
+hackMenu.innerHTML=('<button type="button" onclick="{Runner.instance_.setSpeed(-1000000)}">SetSpeed</button><button type="button" onclick="{Runner.instance_.gameOver=function(){}}">GodMode</button><button type="button" onclick="{Runner.instance_.setSpeed(-100);}">-Speed</button><button type="button" onclick="{Horizon.config.MAX_CLOUDS=(0);Horizon.config.BUMPY_THRESHOLD=(0);Runner.keycodes.DUCK={83: 1};Runner.keycodes.JUMP={87: 1};Runner.keycodes.RESTART={82: 1};}">NewKeysAndWorlds</button><p>Made By Nonumbershere!</p> <style>p{    color: white; background-color: blue;}</style><style> btn {   background-color: green}</style>');
+document.body.insertBefore(hackMenu, document.body.firstChild);
+hackMenu.style.backgroundColor=('red');
+hackMenu.style.height=('50px');
+hackMenu.style.width=('600px');
+hackMenu.style.color=('blue');
+document.querySelector("#suggestions-list > p").style.color=('grey');
+document.querySelector("#suggestions-list > p").style.backgroundColor=('white');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").addEventListener ('mouseover', function() {
+ document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").addEventListener ('mouseout', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").addEventListener ('mouseover', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").addEventListener ('mouseout', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").addEventListener ('mouseover', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").addEventListener ('mouseout', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").addEventListener ('mouseout', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").addEventListener ('mouseover', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").style.background=('darkblue');
+});
