@@ -5,3 +5,7 @@ This place we show you daily hacks!
 Runner.instance_.setSpeed(100000000000); //LOLOLOLOLOLOLOLOLOLOL this is simple lol
 # DIY
 Will add soon.
+# [Website!](https://sites.google.com/view/dinohacks/home)
+## Whats coming?
+- **New Dino Modmenu**
+- **Redirector!**
