@@ -1,0 +1,90 @@
+const hackMenu = document.createElement('div');
+document.title=('Numbs Dino Menu!');
+hackMenu.innerHTML=('<button type="button" onclick="{}">hack/CMDs</button><button type="button" onclick="{Runner.instance_.tRex.config.GRAVITY = -2}">-2 Gravity</button><button type ="button" onclick="{Runner.instance_.tRex.config.GRAVITY = 100}">Hard To Jump?<button type="button" onclick="{Runner.instance_.setSpeed(-1000000)}">SetSpeed</button><button type="button" onclick="{Runner.instance_.gameOver=function(){}}">GodMode</button><button type="button" onclick="{Runner.instance_.setSpeed(-100);}">-Speed</button><button type="button" onclick="{Horizon.config.MAX_CLOUDS=(0);Horizon.config.BUMPY_THRESHOLD=(0);Runner.keycodes.DUCK={83: 1};Runner.keycodes.JUMP={87: 1};Runner.keycodes.RESTART={82: 1};}">NewKeysAndWorlds</button><p>Made By NOH</p> <style>p{    color: white; background-color: red; width: 70px; height: 50px}</style>');
+document.body.insertBefore(hackMenu, document.body.firstChild);
+hackMenu.style.backgroundColor=('green');
+hackMenu.style.height=('80px');
+hackMenu.style.width=('700px');
+hackMenu.style.color=('blue');
+document.querySelector("#suggestions-list > p").style.color=('grey');
+document.querySelector("#suggestions-list > p").style.backgroundColor=('white');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(5)").style.backgroundColor=('blue');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").style.backgroundColor=('blue');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").style.backgroundColor=('blue');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").style.backgroundColor=('blue');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").style.backgroundColor=('blue');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").addEventListener ('mouseover', function() {
+ document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").addEventListener ('mouseout', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(4)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").addEventListener ('mouseover', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").addEventListener ('mouseout', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(3)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").addEventListener ('mouseover', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").addEventListener ('mouseout', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").addEventListener ('mouseout', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").addEventListener ('mouseover', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(2)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(5)").addEventListener ('mouseover', function() {
+ document.querySelector("#t > div:nth-child(1) > button:nth-child(5)").style.background=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(5)").addEventListener ('mouseout', function() {
+  document.querySelector("#t > div:nth-child(1) > button:nth-child(5)").style.background=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(1)").addEventListener ('click', function() {
+console.log('%cACTIVATED CUSTOM KEYS', 'color: green; font-ize: xxx-large;');
+alert('Codes are : G = godmde/ S = speed/ E = In Development. D = W/S Keys/ I = DRAG DA DINO!!!!!!');
+document.body.title=('G gomode S speed E in dev D ws I drag');
+document.title=('G gomode S speed E in dev D ws I drag');
+document.addEventListener('keydown', function(e) {
+		switch(e.keyCode) {
+			case 71:
+			Runner.instance_.gameOver=function(){};	console.log('Activated');
+			break;
+            case 83:
+              ++Runner.instance_.currentSpeed
+       console.log('Current Speed ' +Runner.instance_.currentSpeed);
+			break;
+			case 69:
+				console.log('In Dev!');
+			break;
+            case 68:
+              Runner.keycodes.DUCK={83: 1}
+Runner.keycodes.JUMP={87: 1}
+  alert('Use W/S Keys!');
+            break;
+            case 73:
+            Runner.instance_.containerEl.draggable=(true);
+            break;
+            
+		}
+	});
+});
+document.querySelector("#t > div:nth-child(1) > p").style.fontStyle=('italic');
+document.querySelector("#t > div:nth-child(1) > p").style.fontWeight=('bold');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(6)").style.background=('blue');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(6)").addEventListener ('mouseover', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(6)").style.backgroundColor=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(6)").addEventListener ('mouseout', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(6)").style.backgroundColor=('blue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(7)").style.background=('blue');
+document.querySelector("#t > div:nth-child(1) > button:nth-child(7)").addEventListener ('mouseover', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(7)").style.backgroundColor=('darkblue');
+});
+document.querySelector("#t > div:nth-child(1) > button:nth-child(7)").addEventListener ('mouseout', function() {
+document.querySelector("#t > div:nth-child(1) > button:nth-child(7)").style.backgroundColor=('blue');
+});
