@@ -9,3 +9,4 @@ Will add soon.
 ## Whats coming?
 - **New Dino Modmenu**
 - **Redirector!**
+Try Making Menus Or Hacks For Any Game And I Will Add It To My Website!
