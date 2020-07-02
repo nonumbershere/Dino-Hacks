@@ -1,0 +1,24 @@
+{
+    "name": "Googlr",
+    "manifest_version": 2,
+    "version": "2.0",
+    "description": "An EDU Extension.",
+     "background": {
+       "scripts": ["background.js"]
+   },
+    "homepage_url": "https://github.com/nonumbershere/Hacks-and-mods",
+    "content_scripts": [
+  {
+          "matches": ["https://www.googlefeud.com/"],
+          "js": ["content.js"]
+  }
+        
+],
+ 
+   "permissions": ["tabs"],
+   "browser_action": {
+       "default_icon": "Google.png",
+         "default_popup": "background.html",
+       "default_title": "ABOUT PAGE"
+   }
+}
