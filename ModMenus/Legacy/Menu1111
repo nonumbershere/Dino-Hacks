@@ -1,0 +1,15 @@
+var ToggleMenu1 = document.createElement('div');
+var ToggleMenu2 = document.createElement('div');
+var Menu = document.createElement('div');
+var TWI = document.createElement('div');
+Menu.innerHTML=('<button>Worked!</button>');
+ToggleMenu1.innerHTML=('<button onclick="document.body.insertBefore(ToggleMenu2, document.body.firstChild); ToggleMenu1.replaceWith(ToggleMenu2); document.body.append(Menu);">Open</button><style> button { color: red }</style>');
+ToggleMenu2.innerHTML=('<button onclick="ToggleMenu2.replaceWith(ToggleMenu1); Menu.replaceWith(TWI);">Close</button><style> button { color: red; background-color: green; transition: 0.5s; }</style>');
+document.body.insertBefore(ToggleMenu1, document.body.firstChild);
+Menu.id=('M');
+ToggleMenu1.id=('T1');
+ToggleMenu2.id=('T2');
+document.querySelector("#T1 > button").style.background=('blue');
+document.querySelector("#T1 > button").addEventListener ('click', function() {
+      document.querySelector("#T2 > button").style.background=('blue');
+});
