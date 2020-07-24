@@ -1,0 +1,17 @@
+//Inject
+var aswc = document.createElement('div');
+// Menu
+var Menu = document.createElement('div');
+Menu.innerHTML=('<button id="speed" style="color: black; float: left; height: 30px; background: yellow" onclick="Runner.instance_.setSpeed(100);">Speed</button>');
+aswc.innerHTML=('<button style="background: red;" id="Injection">Inject</button>');
+aswc.addEventListener ('click', function() {
+ alert('Loading assets');
+Menu.style.backgroundColor=('red');
+Menu.style.width=('200px');
+Menu.style.height=('30px');
+Menu.style.boxShadow=('black 100px');
+aswc.replaceWith(Menu);
+ alert('Loaded.');
+});
+aswc.style.background=('red');
+document.body.prepend(aswc);
